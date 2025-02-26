@@ -40,7 +40,7 @@ def formata_numero(numero):
 def montar_array (intElementosArray,intMin, intMax):
   x = 0
   array = []
-  while x < intTamArray:
+  while x < intElementosArray:
     intElementosArray = random.randint(intMin,intMax)
     array.append (intElementosArray)
     x += 1
