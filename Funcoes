@@ -93,15 +93,15 @@ def ler_arquivo_csv_para_lista(nome_arquivo):
         return None
 
 def fazer_str_com_conteudo():
-  frase = input("Frase: ")
-  errado = True
-  while errado:
-    if frase == "":
-        raise TypeError("A frase não pode ser vazia")
-        frase = input("Frase: ")
-        return frase
-    else:
-        errado = False
-        return frase
+  while True:
+    try:
+      frase = input("Frase: ")
+      if frase == "":
+        raise ValueError
+      else:
+         break
+    except ValueError:
+      print("A frase não pode ser nula, tente novamente.")
+  return frase
 
 

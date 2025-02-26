@@ -1,16 +1,16 @@
 #OBS, não estava conseguindo importar a função do arquivo Funcoes de jeito nenhum.
 
 def fazer_str_com_conteudo():
-  frase = input("Frase: ")
-  errado = True
-  while errado:
-    if frase == "":
-        raise TypeError("A frase não pode ser vazia")
-        frase = input("Frase: ")
-        return frase
-    else:
-        errado = False
-        return frase
+  while True:
+    try:
+      frase = input("Frase: ")
+      if frase == "":
+        raise ValueError
+      else:
+         break
+    except ValueError:
+      print("A frase não pode ser nula, tente novamente.")
+  return frase
 
 #1 
 
