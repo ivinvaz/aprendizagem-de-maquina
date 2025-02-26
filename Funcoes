@@ -101,3 +101,4 @@ def fazer_str_com_conteudo():
         return frase
     else:
         errado = False
+
