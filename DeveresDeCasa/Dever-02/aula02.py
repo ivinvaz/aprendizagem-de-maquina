@@ -45,4 +45,4 @@ frase_tupla = tuple(lista_palavras)
 
 #4
 
-print(f"-Número de caracteres da frase: {caracteres_totais}\n-Número de palavras: {quantas_palavras}\n-A palavra com maior comprimento: {maior_palavra}\n-A frase invertida por caracteres: {frase_ao_contrario}\n-A frase invertida por palavras:{frase_contraria}\n-A frase em maiúsculas e minúsculas: {frase_maiuscula}\n-A tupla formada pelas palavras da frase: {frase_tupla}")
+print(f"-Número de caracteres da frase: {caracteres_totais}\n-Número de palavras: {quantas_palavras}\n-A palavra com maior comprimento: {maior_palavra}\n-A frase invertida por caracteres: {frase_ao_contrario}\n-A frase invertida por palavras:{frase_contraria}\n-A frase em maiúsculas: {frase_maiuscula}\n-A tupla formada pelas palavras da frase: {frase_tupla}")
