@@ -1,12 +1,11 @@
 from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression, LinearRegression
+from sklearn.linear_model import LinearRegression
 from sklearn.metrics import accuracy_score
 from sklearn import metrics
 from sklearn import metrics
 import pandas as pd
-import sklearn;
 
-massData = pd.read_csv("/content/Advertising.csv", index_col=0)
+massData = pd.read_csv("./Advertising.csv", index_col=0)
 reglin = LinearRegression()
 
 X = massData[["TV","radio","newspaper"]]
